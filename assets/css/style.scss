@@ -10,7 +10,17 @@
 @import "components/footer";
 @import "components/page";
 
+// Pages
+@import "pages/blog-detail";
+
 body {
+  h3, h2, p {
+    // margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -155,8 +165,63 @@ body {
   animation: deScaleIn 3s linear infinite 500ms;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container {
-    --bs-gutter-x: 40px;
+    max-width: calc( 100% - 120px) !important;
+    padding: 0 !important;
+    margin: auto !important;
+  }
+}
+
+@media screen and  (max-width: 1200px) {
+  .container {
+    max-width: calc( 100% - 210px);
+    padding: 0 !important;
+    margin: auto !important;
+  }
+}
+
+@media screen and  (min-width: 1200px) {
+  .container {
+    max-width: calc( 100% - 288px);
+    padding: 0 !important;
+    margin: auto !important;
+  }
+}
+
+
+@keyframes appfly {
+  25% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appfly2 {
+  25% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

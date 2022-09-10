@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  src:url("Metropolis-Light.otf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src:url("Metropolis-Bold.otf") format("ttf");
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  src:url("Metropolis-ExtraBold.otf") format("ttf");
+}
