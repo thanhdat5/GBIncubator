@@ -453,7 +453,7 @@ body,
 
 .gb-blog-detail .gb-bd-navbar {
   padding: 20.2px 0;
-  background-color: #F9BC60;
+  background-color: #f9bc60;
 }
 .gb-blog-detail .gb-bd-navbar-menu ul {
   padding: 0;
@@ -493,7 +493,7 @@ body,
 .gb-blog-detail .gb-bd-detail-body {
   padding-top: 68px;
   flex: 1;
-  border-right: solid 1px #CDCDCD;
+  border-right: solid 1px #cdcdcd;
 }
 .gb-blog-detail .gb-bd-detail-body-title {
   padding-left: 144px;
@@ -504,6 +504,7 @@ body,
   line-height: 53px;
   font-family: "Avenir", sans-serif;
   font-weight: 800;
+  margin-bottom: 0;
 }
 .gb-blog-detail .gb-bd-detail-body-title .time h3 {
   font-size: 24px;
@@ -535,6 +536,10 @@ body,
   margin-top: 19px;
   margin-bottom: 84px;
 }
+.gb-blog-detail .gb-bd-detail-body-sub .gb-bd-share {
+  display: inline-flex;
+  gap: 28px;
+}
 .gb-blog-detail .gb-bd-detail-body-image img {
   width: 100%;
   padding-bottom: 40px;
@@ -542,6 +547,7 @@ body,
 .gb-blog-detail .gb-bd-detail-body-text {
   padding-right: 37px;
   padding-bottom: 36px;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
@@ -551,7 +557,8 @@ body,
 .gb-blog-detail .gb-bd-detail-body-quote {
   padding-right: 46px;
   padding-left: 27px;
-  border-left: solid 4px #FF647C;
+  border-left: solid 4px #ff647c;
+  margin-bottom: 0;
   font-family: "Avenir", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -575,6 +582,7 @@ body,
   font-weight: 900;
   letter-spacing: -4%;
   color: #181A1C;
+  margin-bottom: 22px;
 }
 .gb-blog-detail .gb-bd-detail-content-item p {
   font-family: "Avenir", sans-serif;
@@ -583,13 +591,19 @@ body,
   font-weight: 400;
   color: #181A1C;
 }
+.gb-blog-detail .gb-bd-detail-content-item p:last-child {
+  margin-bottom: 0;
+}
 .gb-blog-detail .gb-bd-detail-content-item:nth-child(4) img {
   padding: 31px 0;
   width: 100%;
 }
 .gb-blog-detail .gb-bd-detail-related {
   padding: 50px 32px 85px 144px;
-  background-color: #ECEBED;
+  background-color: #ecebed;
+}
+.gb-blog-detail .gb-bd-detail-related h2 {
+  margin-bottom: 29px;
 }
 .gb-blog-detail .gb-bd-detail-related-items {
   display: flex;
@@ -599,14 +613,14 @@ body,
 .gb-blog-detail .gb-bd-detail-related-items .items-col {
   flex: 1;
 }
+.gb-blog-detail .gb-bd-detail-related-items .items-col.gb-bd-related-col {
+  row-gap: 17px;
+}
 .gb-blog-detail .gb-bd-detail-related-items .item {
   display: flex;
   flex-direction: row;
-  gap: 0 20px;
+  gap: 0 19px;
   transition: all 0.2s linear;
-}
-.gb-blog-detail .gb-bd-detail-related-items .item:hover {
-  transform: translate(4px, -3px);
 }
 .gb-blog-detail .gb-bd-detail-related-items .item-content h3 {
   margin: 0;
@@ -632,10 +646,10 @@ body,
   width: 100%;
 }
 .gb-blog-detail .gb-bd-author-container {
-  padding: 31px;
+  padding: 145px 80px 0 33px;
   position: sticky;
   position: -webkit-sticky;
-  top: 107px;
+  top: 0px;
 }
 .gb-blog-detail .gb-bd-author-about h3 {
   font-family: "Avenir", sans-serif;
@@ -644,6 +658,7 @@ body,
   letter-spacing: -2%;
   font-weight: 900;
   color: #181A1C;
+  margin-bottom: 0;
 }
 .gb-blog-detail .gb-bd-author-about .intro {
   font-size: 16px;
@@ -654,7 +669,7 @@ body,
 }
 .gb-blog-detail .gb-bd-author-about .avatar {
   margin-top: 24px;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 .gb-blog-detail .gb-bd-author-about .avatar .user h2 {
   font-size: 18px;
@@ -674,7 +689,7 @@ body,
   color: #595E65;
 }
 .gb-blog-detail .gb-bd-author-lastestNews {
-  margin-top: 58px;
+  margin-top: 69px;
 }
 .gb-blog-detail .gb-bd-author-lastestNews h2 {
   margin: 0;
@@ -687,6 +702,7 @@ body,
 }
 .gb-blog-detail .gb-bd-author-lastestNews .lastestNews-items {
   margin-top: 44px;
+  row-gap: 15px;
 }
 .gb-blog-detail .gb-bd-author-lastestNews .lastestNews-items h3 {
   margin: 0;
@@ -698,7 +714,7 @@ body,
   color: #181A1C;
 }
 .gb-blog-detail .gb-bd-author-lastestNews .lastestNews-items-item .author {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .gb-blog-detail .gb-bd-author-lastestNews .lastestNews-items-item .author p {
   margin: 0;
