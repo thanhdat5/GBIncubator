@@ -918,6 +918,22 @@ body,
   .gb-bd-author {
     display: none;
   }
+  .gb-bd-navbar a {
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  .gb-bd-detail-body-title h1 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+  .gb-bd-detail-body-title .time h3 {
+    font-size: 17px !important;
+    line-height: 21px !important;
+  }
+  .gb-bd-detail-body-title .time p {
+    font-size: 13px !important;
+    line-height: 16px !important;
+  }
 }
 body a {
   text-decoration: none;
