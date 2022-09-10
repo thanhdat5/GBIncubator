@@ -241,10 +241,10 @@
     width: 100%;
 
     &-container {
-      padding: 145px 80px 30px 33px;
+      padding: 130px 80px 30px 33px;
       position: sticky;
       position: -webkit-sticky;
-      top: 0px;
+      top: 0;
     }
 
     &-about {
@@ -379,7 +379,8 @@
 
   .gb-bd-author {
     &-container {
-      padding: 20px !important;
+        padding: 20px !important;
+        padding-top: 120px !important;
     }
 
     &-about {
@@ -577,6 +578,7 @@
   .gb-bd-author {
     &-container {
       padding: 10px !important;
+      padding-top: 100px !important;
     }
 
     &-about {

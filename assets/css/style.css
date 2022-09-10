@@ -650,10 +650,10 @@ body,
   width: 100%;
 }
 .gb-blog-detail .gb-bd-author-container {
-  padding: 145px 80px 30px 33px;
+  padding: 130px 80px 30px 33px;
   position: sticky;
   position: -webkit-sticky;
-  top: 0px;
+  top: 0;
 }
 .gb-blog-detail .gb-bd-author-about h3 {
   font-family: "Avenir", sans-serif;
@@ -762,6 +762,7 @@ body,
   }
   .gb-bd-author-container {
     padding: 20px !important;
+    padding-top: 120px !important;
   }
   .gb-bd-author-about h3 {
     font-size: 21px !important;
@@ -904,6 +905,7 @@ body,
   }
   .gb-bd-author-container {
     padding: 10px !important;
+    padding-top: 100px !important;
   }
   .gb-bd-author-about h3 {
     font-size: 18px !important;
