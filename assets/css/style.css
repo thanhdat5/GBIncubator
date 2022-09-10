@@ -794,6 +794,10 @@ body,
   .gb-bd-navbar {
     padding: 10px 0 !important;
   }
+  .gb-bd-navbar a {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
   .gb-bd-navbar img {
     width: 80% !important;
     height: 80% !important;
