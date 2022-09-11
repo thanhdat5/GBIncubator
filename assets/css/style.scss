@@ -12,6 +12,9 @@
 
 // Pages
 @import "pages/blog-detail";
+@import "pages/portfolio";
+
+
 
 body {
   h3, h2, p {
@@ -167,7 +170,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: calc( 100% - 120px) !important;
+    max-width: calc( 100% - 70px) !important;
     padding: 0 !important;
     margin: auto !important;
   }

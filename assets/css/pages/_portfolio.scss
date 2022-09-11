@@ -1,0 +1,131 @@
+.gb-our-portfolio {
+  .row {
+    --bs-gutter-x: 30px;
+  }
+  .gb-op-content {
+    padding-bottom: 200px;
+    .gb-op-parcel {
+      height: 66px;
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 78px;
+      display: flex;
+      padding-left: 28px;
+      align-items: center;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 22px;
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 50px;
+      }
+      .gb-op-line {
+        border: 2px solid $gb-white-color;
+        margin-left: 20px;
+        width: 112px;
+      }
+      .gb-op-line-dark {
+        border: 2px solid $gb-black-color;
+      }
+
+      .gb-op-txt-custom {
+        color: $gb-white-color;
+      }
+    }
+    .gb-op-parcel-blue {
+      background-color: $gb-accent-color-blue;
+    }
+
+    .gb-op-parcel-orange {
+      background-color: $gb-accent-color-orange;
+    }
+    .gb-op-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      margin-bottom: 88px;
+      @media screen and (max-width: 1200px) {
+        display: unset;
+      }
+      &:hover {
+        .gb-op-card-image {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .gb-op-card-image {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: $gb-white-color;
+        border-radius: 16px;
+        img {
+          max-height: 108px;
+          max-width: 100%;
+          object-fit: contain;
+          transform-origin: center center;
+          transition: all ease-in-out 0.3s;
+          width: 158px;
+          @media screen and (max-width: 576px) {
+            max-width: 80%;
+            width: unset;
+          }
+        }
+        @media screen and (max-width: 1200px) {
+          padding: 0px;
+          margin-bottom: 25px;
+        }
+      }
+      .gb-op-card-image-custom {
+        max-width: 219px;
+        background-color: $gb-black-color;
+        @media screen and (max-width: 1200px) {
+          max-width: unset;
+        }
+      }
+      .gb-op-card-info {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1;
+        padding-left: 20px;
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 40px;
+        }
+        .gb-op-card-title {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          @media screen and (max-width: 1200px) {
+            font-size: 18px;
+          }
+        }
+        .gb-op-card-description {
+          margin-bottom: 9px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          font-family: "Avenir", sans-serif;
+          color: $gb-primary-color-dark-gray;
+          @media screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
+        }
+        .gb-op-card-action {
+          a {
+            @include gb-text-base;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: $gb-accent-color-dark-green;
+            transition: all ease-in-out 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
