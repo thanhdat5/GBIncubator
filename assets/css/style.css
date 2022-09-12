@@ -403,7 +403,7 @@ body,
 
 .gb-page-banner {
   padding-top: 73px;
-  padding-bottom: 160px;
+  padding-bottom: 87px;
 }
 @media (max-width: 767px) {
   .gb-page-banner {
@@ -418,7 +418,7 @@ body,
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #000;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
   text-align: center;
 }
 .gb-page-banner .gb-page-title {
@@ -961,6 +961,156 @@ body,
     line-height: 16px !important;
   }
 }
+.gb-our-portfolio .gb-page-banner {
+  padding-top: 64px;
+}
+.gb-our-portfolio .gb-page-banner .gb-page-title {
+  margin-bottom: 22px;
+}
+.gb-our-portfolio .row {
+  --bs-gutter-x: 6px;
+}
+.gb-our-portfolio .gb-op-content {
+  padding-bottom: 200px;
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel {
+  height: 66px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 72px;
+  display: flex;
+  padding-left: 28px;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 22px;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-parcel {
+    margin-bottom: 50px;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel .gb-op-line {
+  border: 2px solid #ffffff;
+  margin-left: 21px;
+  width: 112px;
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel .gb-op-line-dark {
+  border: 2px solid #000;
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel .gb-op-txt-custom {
+  color: #ffffff;
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel-blue {
+  background-color: #0084F4;
+}
+.gb-our-portfolio .gb-op-content .gb-op-parcel-orange {
+  background-color: #EE7A3F;
+}
+.gb-our-portfolio .gb-op-content .gb-op-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-bottom: 88px;
+  width: 386px;
+  max-width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card {
+    display: unset;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card:hover .gb-op-card-image img {
+  transform: scale(1.1);
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 9px;
+  width: 158px;
+  min-width: 158px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image img {
+  max-height: 108px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform-origin: center center;
+  transition: all ease-in-out 0.3s;
+  width: 158px;
+}
+@media screen and (max-width: 576px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image img {
+    max-width: 80%;
+    width: unset;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image {
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image-custom {
+  max-width: 219px;
+  background-color: #000;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-image-custom {
+    max-width: unset;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  padding-left: 7px;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info {
+    margin-bottom: 40px;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info .gb-op-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info .gb-op-card-title {
+    font-size: 18px;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info .gb-op-card-description {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "Avenir", sans-serif;
+  color: #595e65;
+}
+@media screen and (max-width: 1200px) {
+  .gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info .gb-op-card-description {
+    font-size: 16px;
+  }
+}
+.gb-our-portfolio .gb-op-content .gb-op-card .gb-op-card-info .gb-op-card-action a {
+  font-family: "Avenir", sans-serif;
+  color: #1a051d;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #004643;
+  transition: all ease-in-out 0.3s;
+}
+
 body a {
   text-decoration: none;
 }
@@ -1089,7 +1239,7 @@ body a {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: calc(100% - 120px) !important;
+    max-width: calc(100% - 70px) !important;
     padding: 0 !important;
     margin: auto !important;
   }
