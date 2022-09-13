@@ -1220,6 +1220,12 @@ body,
     height: 85%;
   }
 }
+@media (max-width: 768px) {
+  .gb-main-expertise .gb-page-content .gb-expertise-experts-box .gb-expertise-experts .gb-expertise-expert img {
+    width: 50%;
+    height: 50%;
+  }
+}
 @media (max-width: 576px) {
   .gb-main-expertise .gb-page-content .gb-expertise-experts-box .gb-expertise-experts .gb-expertise-expert img {
     width: 50%;
@@ -1257,7 +1263,18 @@ body,
     font-size: 22px;
   }
 }
-.gb-main-expertise .gb-page-content .gb-expertise-help .gb-expertise-dot {
+.gb-main-expertise .gb-page-content .gb-expertise-help .item {
+  margin-bottom: 27px;
+}
+@media (max-width: 576px) {
+  .gb-main-expertise .gb-page-content .gb-expertise-help .item {
+    margin-bottom: 10px;
+  }
+}
+.gb-main-expertise .gb-page-content .gb-expertise-help .item .form-label {
+  margin-bottom: 4px;
+}
+.gb-main-expertise .gb-page-content .gb-expertise-help .item .form-label .gb-expertise-dot {
   color: red;
 }
 .gb-main-expertise .gb-page-content .gb-expertise-help .gb-expertise-help-btn {
@@ -1271,18 +1288,21 @@ body,
 }
 @media (max-width: 576px) {
   .gb-main-expertise .gb-page-content .gb-expertise-help .gb-expertise-help-btn {
-    padding: 8px 30px;
-    font-size: 14px;
+    padding: 6px 20px;
+    font-size: 12px;
   }
 }
 .gb-main-expertise .gb-page-content .gb-expertise-help .help-text {
   font-size: 12px;
   font-weight: 400;
   color: #787878;
+  margin-top: 11px;
 }
 @media (max-width: 576px) {
   .gb-main-expertise .gb-page-content .gb-expertise-help .help-text {
-    font-size: 7px;
+    font-size: 10px;
+    margin-top: 2px;
+    line-height: 18px;
   }
 }
 @media (max-width: 1200px) {
@@ -1298,6 +1318,7 @@ body,
 @media (max-width: 576px) {
   .gb-main-expertise .gb-page-content .gb-expertise-help .form-label {
     font-size: 12px;
+    line-height: 16px;
   }
   .gb-main-expertise .gb-page-content .gb-expertise-help .form-control {
     height: 40px;
@@ -1305,13 +1326,28 @@ body,
   .gb-main-expertise .gb-page-content .gb-expertise-help .form-control.form-control-text-area {
     height: 50px;
   }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .gb-main-expertise .gb-page-content .gb-expertise-help .form-control {
+    height: 30px;
+  }
+}
+@media (max-width: 576px) {
   .gb-main-expertise .gb-page-content .gb-expertise-help .btn-toggle {
+    padding: 8px 17px 8px 21px;
     font-size: 14px;
     height: 40px;
   }
 }
+@media (max-width: 576px) and (max-width: 576px) {
+  .gb-main-expertise .gb-page-content .gb-expertise-help .btn-toggle {
+    padding: auto;
+    font-size: 10px;
+    height: 30px;
+  }
+}
 .gb-main-expertise .gb-page-content .gb-expertise-contact {
-  padding: 77px 824px 90px 144px;
+  padding: 77px 824px 77px 144px;
   background-color: #143b39;
 }
 .gb-main-expertise .gb-page-content .gb-expertise-contact h1 {

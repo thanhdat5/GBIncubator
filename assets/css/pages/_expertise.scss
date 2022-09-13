@@ -265,6 +265,13 @@
             }
           }
 
+          @media (max-width: 768px) {
+            img {
+              width: 50%;
+              height: 50%;
+            }
+          }
+
           @media (max-width: 576px) {
             img {
               width: 50%;
@@ -303,8 +310,20 @@
         }
       }
 
-      .gb-expertise-dot {
-        color: red;
+      .item {
+        margin-bottom: 27px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 10px;
+        }
+
+        .form-label {
+          margin-bottom: 4px;
+
+          .gb-expertise-dot {
+            color: red;
+          }
+        }
       }
 
       .gb-expertise-help-btn {
@@ -317,8 +336,8 @@
         border: none;
 
         @media (max-width: 576px) {
-          padding: 8px 30px;
-          font-size: 14px;
+          padding: 6px 20px;
+          font-size: 12px;
         }
       }
 
@@ -326,9 +345,12 @@
         font-size: 12px;
         font-weight: 400;
         color: #787878;
+        margin-top: 11px;
 
         @media (max-width: 576px) {
-          font-size: 7px;
+          font-size: 10px;
+          margin-top: 2px;
+          line-height: 18px;
         }
       }
 
@@ -343,6 +365,7 @@
       @media (max-width: 576px) {
         .form-label {
           font-size: 12px;
+          line-height: 16px;
         }
 
         .form-control {
@@ -351,17 +374,28 @@
           &.form-control-text-area {
             height: 50px;
           }
+
+          @media (max-width: 576px) {
+            height: 30px;
+          }
         }
 
         .btn-toggle {
+          padding: 8px 17px 8px 21px;
           font-size: 14px;
           height: 40px;
+
+          @media (max-width: 576px) {
+            padding: auto;
+            font-size: 10px;
+            height: 30px;
+          }
         }
       }
     }
 
     .gb-expertise-contact {
-      padding: 77px 824px 90px 144px;
+      padding: 77px 824px 77px 144px;
       background-color: #143b39;
 
       h1 {
