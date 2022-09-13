@@ -13,6 +13,11 @@
 // Pages
 @import "pages/blog-detail";
 @import "pages/expertise.scss";
+@import "pages/portfolio";
+@import "pages/blog-author";
+
+
+
 
 body {
   h3,
@@ -170,7 +175,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: calc(100% - 120px) !important;
+    max-width: calc( 100% - 70px) !important;
     padding: 0 !important;
     margin: auto !important;
   }
