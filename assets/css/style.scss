@@ -12,13 +12,17 @@
 
 // Pages
 @import "pages/blog-detail";
+@import "pages/expertise.scss";
 @import "pages/portfolio";
 @import "pages/blog-author";
 
 
 
+
 body {
-  h3, h2, p {
+  h3,
+  h2,
+  p {
     // margin: 0;
   }
 
@@ -35,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba($color: $gb-accent-color-dark-green, $alpha: .5);
+  background-color: rgba($color: $gb-accent-color-dark-green, $alpha: 0.5);
 }
 .gb-loader-wrapper {
   position: fixed;
@@ -52,7 +56,7 @@ body {
 .gb-loader-element {
   width: 50px;
   height: 50px;
-  background:$gb-accent-color-dark-green;
+  background: $gb-accent-color-dark-green;
   position: absolute;
   left: 50%;
   margin-left: -25px;
@@ -177,22 +181,21 @@ body {
   }
 }
 
-@media screen and  (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container {
-    max-width: calc( 100% - 210px);
+    max-width: calc(100% - 210px);
     padding: 0 !important;
     margin: auto !important;
   }
 }
 
-@media screen and  (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: calc( 100% - 288px);
+    max-width: calc(100% - 288px);
     padding: 0 !important;
     margin: auto !important;
   }
 }
-
 
 @keyframes appfly {
   25% {

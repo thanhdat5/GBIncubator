@@ -1,0 +1,434 @@
+.gb-main-expertise {
+  .gb-page-content {
+    .gb-expertise-header {
+      position: relative;
+      height: 72px;
+      background-color: $gb-accent-color-yellow;
+
+      .nav-menu {
+        background-color: $gb-accent-color-yellow;
+      }
+
+      .gb-main-expertise-img {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .gb-expertise-introduce {
+      padding-top: 76px;
+
+      h3 {
+        font-weight: 900;
+        font-size: 24px;
+      }
+
+      h1 {
+        font-size: 62px;
+        font-weight: 800;
+        line-height: 62px;
+        text-align: center;
+
+        @media (max-width: 576px) {
+          font-size: 36px;
+          line-height: 36px;
+        }
+      }
+
+      p {
+        width: 52%;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: center;
+        margin-top: 30px;
+
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .gb-expertise-banner {
+      margin-top: 83px;
+      margin-bottom: 114px;
+
+      .gb-expertise-banner-inner {
+        padding: 75px 59px;
+        height: 100%;
+        width: 100%;
+        background-color: $gb-white-color;
+        overflow: hidden;
+
+        h3 {
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 45px;
+
+          @media (max-width: 992px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 24px;
+          }
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          color: $gb-primary-color-dark-gray;
+
+          @media (max-width: 992px) {
+            font-size: 14px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+
+        @media (max-width: 992px) {
+          padding: 10%;
+        }
+      }
+
+      .gb-expertise-banner-img {
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .gb-expertise-description {
+      padding: 0 32px;
+      margin-bottom: 144px;
+
+      h1 {
+        font-size: 44px;
+        font-weight: 800;
+        margin-bottom: 82px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .gb-expertise-description-box {
+        gap: 24px;
+
+        .gb-expertise-description-card {
+          padding: 64px 36px 52px;
+          border-radius: 16px;
+
+          h2 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 39px;
+
+            @media (max-width: 1199px) {
+              font-size: 34px;
+            }
+
+            @media (max-width: 992px) {
+              font-size: 30px;
+              margin-bottom: 30px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: center;
+
+            @media (max-width: 1200px) {
+              font-size: 14px;
+            }
+          }
+
+          &.des-1 {
+            background-color: $gb-accent-color-yellow;
+            color: #302f2f;
+
+            h2 {
+              color: inherit;
+            }
+          }
+
+          &.des-2 {
+            background-color: $gb-accent-color-red;
+            color: #fafafa;
+
+            h2 {
+              color: inherit;
+            }
+          }
+
+          &.des-3 {
+            background-color: $gb-accent-color-green;
+            color: $gb-primary-color-black;
+
+            h2 {
+              color: inherit;
+            }
+          }
+
+          @media (max-width: 992px) {
+            padding: 3%;
+          }
+
+          @media (max-width: 768px) {
+            width: 85%;
+            margin: 0 auto;
+          }
+        }
+
+        @media (max-width: 992px) {
+          gap: 16px;
+        }
+      }
+    }
+
+    .gb-expertise-experts-box {
+      padding: 0;
+
+      h1 {
+        font-weight: 800;
+        font-size: 44px;
+        text-align: center;
+        color: $gb-black-color;
+        margin-bottom: 68px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .gb-expertise-experts {
+        padding: 101px 160px 105px 145px;
+        margin-bottom: 107px;
+        background-color: #e5e7fa;
+
+        .gb-expertise-expert {
+          gap: 14px;
+          color: $gb-black-color;
+
+          .gb-expertise-expert-name {
+            font-size: 24px;
+            font-weight: 400;
+
+            @media (max-width: 991) {
+              font-size: 20px;
+            }
+
+            @media (max-width: 768px) {
+              font-size: 18px;
+            }
+          }
+
+          .gb-expertise-expert-job {
+            font-size: 20px;
+            font-weight: 400;
+
+            @media (max-width: 991px) {
+              font-size: 14px;
+            }
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+
+          @media (max-width: 992px) {
+            img {
+              width: 85%;
+              height: 85%;
+            }
+          }
+
+          @media (max-width: 768px) {
+            img {
+              width: 50%;
+              height: 50%;
+            }
+          }
+
+          @media (max-width: 576px) {
+            img {
+              width: 50%;
+              height: 50%;
+            }
+          }
+        }
+
+        @media (max-width: 1200px) {
+          padding: 8% 5%;
+        }
+
+        @media (max-width: 768px) {
+          padding: 5% 1%;
+        }
+      }
+    }
+
+    .gb-expertise-help {
+      padding: 0 328px;
+      margin-bottom: 202px;
+
+      .gb-expertise-form-title {
+        font-size: 44px;
+        font-weight: 800;
+        margin-bottom: 61px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+          font-size: 36px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 22px;
+        }
+      }
+
+      .item {
+        margin-bottom: 27px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 10px;
+        }
+
+        .form-label {
+          margin-bottom: 4px;
+
+          .gb-expertise-dot {
+            color: red;
+          }
+        }
+      }
+
+      .gb-expertise-help-btn {
+        padding: 12px 48px;
+        background-color: #153d3b;
+        border-radius: 16px;
+        font-weight: 900;
+        font-size: 20px;
+        color: $gb-white-color;
+        border: none;
+
+        @media (max-width: 576px) {
+          padding: 6px 20px;
+          font-size: 12px;
+        }
+      }
+
+      .help-text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #787878;
+        margin-top: 11px;
+
+        @media (max-width: 576px) {
+          font-size: 10px;
+          margin-top: 2px;
+          line-height: 18px;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        padding: 0 15%;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 10%;
+      }
+
+      @media (max-width: 576px) {
+        .form-label {
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        .form-control {
+          height: 40px;
+
+          &.form-control-text-area {
+            height: 50px;
+          }
+
+          @media (max-width: 576px) {
+            height: 30px;
+          }
+        }
+
+        .btn-toggle {
+          padding: 8px 17px 8px 21px;
+          font-size: 14px;
+          height: 40px;
+
+          @media (max-width: 576px) {
+            padding: auto;
+            font-size: 10px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .gb-expertise-contact {
+      padding: 77px 824px 77px 144px;
+      background-color: #143b39;
+
+      h1 {
+        font-weight: 900;
+        font-size: 36px;
+        color: $gb-white-color;
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 20px;
+        }
+      }
+
+      h4 {
+        color: $gb-white-color;
+        font-size: 18px;
+        font-weight: 400;
+
+        @media (max-width: 576px) {
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        padding: 5% 45% 10% 10%;
+      }
+
+      @media (max-width: 768px) {
+        padding: 5% 30% 8% 10%;
+      }
+    }
+  }
+}
