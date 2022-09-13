@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 200;
+  src:url("Metropolis-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 200;
+  src:url("Metropolis-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  src:url("Metropolis-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  src:url("Metropolis-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 600;
+  src:url("Metropolis-SemiBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src:url("Metropolis-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  src:url("Metropolis-SemiBold.otf") format("otf");
+}
