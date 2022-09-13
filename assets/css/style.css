@@ -1247,6 +1247,9 @@ body,
     font-size: 18px;
   }
 }
+.gb-blog-author .gb-ba-body .gb-ba-card-news .gb-ba-news-link {
+  color: unset;
+}
 .gb-blog-author .gb-ba-body .gb-ba-card-news .gb-ba-news-info {
   display: flex;
 }
@@ -1306,7 +1309,6 @@ body,
   line-height: 29px;
   letter-spacing: -2%;
   font-weight: 900;
-  color: #181A1C;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
