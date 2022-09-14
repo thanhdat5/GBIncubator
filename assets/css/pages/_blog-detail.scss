@@ -2,7 +2,6 @@
   .gb-bd-navbar {
     padding: 20.2px 0;
     background-color: $gb-accent-color-yellow;
-
     &-menu {
       ul {
         padding: 0;
@@ -10,18 +9,22 @@
         list-style: none;
         display: flex;
         gap: 0 55px;
-
+        @media screen and (max-width: 768px) {
+          gap: 0 30px;
+        }
         li {
           a {
             position: relative;
             font-size: 19px;
             line-height: 24.59px;
             font-weight: 800;
-
             color: $gb-black-color;
             display: flex;
             flex-direction: column-reverse;
-
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+              line-height: 20px;
+            }
             &::after {
               position: absolute;
               left: 0;
@@ -31,7 +34,6 @@
               background-color: $gb-black-color;
               transition: all 0.3s linear;
             }
-
             &:hover::after {
               width: 100%;
             }
@@ -60,40 +62,31 @@
         padding: 0 !important;
         margin: auto !important;
         padding-right: 61px;
+        @media screen and (max-width: 1200px) {
+          max-width: calc(100% - 210px);
+        }
         @media screen and (max-width: 768px) {
           max-width: calc(100% - 70px) !important;
         }
         .gb-bd-intro-title {
-          font-size: 25px;
+          font-size: 44px;
           line-height: 40px;
-          font-weight: 800;
-        }
-
-        .app {
-          svg {
-            transition: all 0.3s linear;
-            cursor: pointer;
-            &:nth-child(1) {
-              animation: appfly 4s infinite;
-            }
-            &:nth-child(2) {
-              animation: appfly2 4s infinite;
-            }
+          @media screen and (max-width: 1200px) {
+            font-size: 28px;
           }
         }
-
         .gb-bd-intro-info {
           margin-top: 19px;
           margin-bottom: 84px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1200px) {
             margin-bottom: 30px;
           }
           .gb-bd-info-time {
             display: flex;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1200px) {
               display: unset;
             }
             h3 {
@@ -102,31 +95,26 @@
               font-weight: 900;
               color: $gb-sub-blog-color;
               margin-right: 33px;
-              @media screen and (max-width: 768px) {
-                font-size: 13px;
-                line-height: 25px;
+              @media screen and (max-width: 1200px) {
+                font-size: 16px;
               }
             }
   
             p {
               font-size: 18px;
               line-height: 27px;
-              font-weight: 400;
               color: $gb-sub-blog-color;
-              @media screen and (max-width: 768px) {
-                font-size: 13px;
-                line-height: 25px;
+              @media screen and (max-width: 1200px) {
+                font-size: 16px;
               }
               &:last-child {
                 margin-left: 22px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1200px) {
                   margin-left: unset;
                 }
               }
-
             }
           }
-  
           .gb-bd-info-share {
             display: inline-flex;
             gap: 28px;
@@ -140,9 +128,13 @@
         margin: auto !important;
         padding-right: 61px;
         margin-top: 53px;
+        @media screen and (max-width: 1200px) {
+          max-width: calc(100% - 210px) !important;
+        }
         @media screen and (max-width: 768px) {
           max-width: calc(100% - 70px) !important;
         }
+        
         .gb-bd-content-img {
           img {
             width: 100%;
@@ -150,29 +142,26 @@
           }
         }
         .gb-bd-content-text {
-          padding-right: 37px;
-          padding-bottom: 36px;
+          padding: 0 37px 36px 0;
           margin-bottom: 0;
           font-size: 18px;
           line-height: 27px;
-          font-weight: 400;
-          color: $gb-primary-color-black;
           @media screen and (max-width: 768px) {
             font-size: 16px;
+            padding-right: unset;
           }
         } 
         .gb-bd-content-quote {
-          padding-right: 46px;
-          padding-left: 27px;
+          padding: 0 46px 0 27px;
           border-left: solid 4px #ff647c;
           margin-bottom: 53px;
           font-weight: 800;
           font-size: 20px;
           line-height: 26px;
-          letter-spacing: -3%;
           font-style: italic;
           @media screen and (max-width: 768px) {
             font-size: 18px;
+            padding-right: unset;
           }
         }
         
@@ -186,20 +175,15 @@
             font-size: 36px;
             line-height: 47px;
             font-weight: 900;
-            letter-spacing: -4%;
-            color: $gb-primary-color-black;
             margin-bottom: 22px;
             @media screen and (max-width: 768px) {
               font-size: 25px;
             }
           }
-  
           p {
             font-size: 18px;
             line-height: 27px;
-            font-weight: 400;
             margin-bottom: 31px;
-            color: $gb-primary-color-black;
             @media screen and (max-width: 768px) {
               font-size: 16px;
             }
@@ -211,7 +195,7 @@
             padding-bottom: 31px;
             width: 100%;
           }
-
+          
         .gb-bd-paragraph-last {
           margin-bottom: 66px;
         }
@@ -226,38 +210,62 @@
       }
 
       &-quote {
-        padding-right: 46px;
-        padding-left: 27px;
+        padding: 0 46px 0 27px;
         border-left: solid 4px #ff647c;
-        margin-bottom: 0;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 26px;
-        letter-spacing: -3%;
         font-style: italic;
       }
     }
 
     &-related {
-      padding: 50px 32px 85px 32px;
       background-color: $gb-primary-color-light-gray;
+      padding-bottom: 85px;
+      @media screen and (max-width: 1200px) {
+        padding-bottom: 40px;
+      }
       @media screen and (max-width: 768px) {
-        padding: 50px 32px 50px 32px;
+        padding-left: unset;
+        padding-right: unset;
+        padding-bottom: 50px;
       }
-      h2 {
-        margin-bottom: 29px;
+
+      &-container {
+        max-width: calc(100% - 288px);
+        padding: 0 !important;
+        margin: auto !important;
+        @media screen and (max-width: 1200px) {
+          max-width: calc(100% - 210px) !important;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: calc(100% - 70px) !important;
+          padding: unset;
+        }
+        .gb-bd-related-title {
+          margin-bottom: 29px;
+          padding-top: 50px;
+          font-size: 20px;
+          line-height: 26px;
+          @media screen and (max-width: 768px) {
+            padding-top: 15px;
+          }
+        }
       }
+
+      &-title {
+        @media screen and (max-width: 768px) {
+          margin: unset;
+        }
+      }
+
       &-items {
         display: flex;
         flex-direction: row;
         gap: 0 5%;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1200px) {
           display: unset;
         }
 
         .items-col {
           display: flex;
-          
           flex: 1;
           &.gb-bd-related-col {
             row-gap: 17px;
@@ -271,8 +279,6 @@
           align-items: center;
           gap: 0 19px;
           transition: all 0.2s linear;
-          justify-content: center;
-
           &-content {
             h3 {
               margin: 0;
@@ -285,7 +291,6 @@
 
             h2 {
               margin: 0;
-
               font-weight: 800;
               font-size: 16px;
               line-height: 26px;
@@ -302,13 +307,12 @@
     flex: 0.35;
     height: inherit;
     width: 100%;
-
     &-container {
       padding: 145px 80px 30px 33px;
       position: sticky;
       position: -webkit-sticky;
       top: 0px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1200px) {
         padding: 45px 33px 30px 33px;
       }
     }
@@ -319,39 +323,40 @@
         line-height: 29px;
         letter-spacing: -2%;
         font-weight: 900;
-        color: $gb-primary-color-black;
         margin-bottom: 0;
+        @media screen and (max-width: 1200px) {
+          font-size: 18px;
+        }
       }
 
       .intro {
         font-size: 16px;
         line-height: 24px;
-        font-weight: 400;
         color: $gb-sub-blog-color;
       }
 
       .avatar {
         display: flex;
-        margin-top: 24px;
-        margin-bottom: 10px;
+        margin: 24px 0 10px 0;
         align-items: center;
         cursor: pointer;
         .user {
           margin-left: 7px;
-          h2 {
+          &-name {
             font-size: 18px;
             line-height: 26px;
             font-weight: 800;
-            letter-spacing: -3%;
             color: $gb-sub-blog-color;
             margin: 0;
+            @media screen and (max-width: 1200px) {
+              font-size: 15px;
+            }
           }
 
-          p {
+          &-followers {
             margin: 0;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 20px;
-            font-weight: 400;
             color: $gb-sub-blog-color;
           }
         }
@@ -369,34 +374,35 @@
         line-height: 29px;
         font-weight: 900;
         letter-spacing: -2%;
-        color: $gb-primary-color-black;
+        
+        @media screen and (max-width: 1200px) {
+          font-size: 18px;
+        }
       }
 
       .lastestNews-items {
         display: flex;
         margin-top: 44px;
         row-gap: 15px;
+        @media screen and (max-width: 1200px) {
+          margin-top: 20px;
+        }
         h3 {
           margin: 0;
           font-size: 18px;
           line-height: 26px;
           font-weight: 800;
-          letter-spacing: -3%;
-          color: $gb-primary-color-black;
         }
 
         &-item {
           .author {
             display: flex;
-            margin-top: 8px;
-            margin-bottom: 15px;
+            margin: 8px 0 15px 0;
             justify-content: space-between;
-
             p {
               margin: 0;
               font-size: 14px;
               line-height: 20px;
-              font-weight: 400;
               color: $gb-sub-blog-color;
             }
           }
