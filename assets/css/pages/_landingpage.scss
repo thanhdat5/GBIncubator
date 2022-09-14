@@ -670,15 +670,152 @@
         }
     }
 
+    @media screen and (min-width: 1400px ){
+        .gb-home-featured-posts {
+            .right {
+                .slick-dots {
+                    position: absolute;
+                    transform: translate(100%, 42px);
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0 18px;
+                    list-style: none;
+    
+                    button {
+                        font-size: 0;
+                        outline: none;
+                        width: 12px;
+                        height: 12px;
+                        background-color: #D9D9D9;
+                       border-radius: 100rem;
+                        border: none;
+                        transition: all 0.2s linear;
+                    }
+                    .slick-active button {
+                        background-color: #D25F5A;
+                        border: none;
+                        width: 55px;
+                        height: 12px;
+                        border-radius: 50px;
+                    }
+                }
+    
+            }
+        }
+        .gb-home-latest-news {
+            &-content {
+              
+                .gb-home-recommendation {
+                    .total {
+                        .content {
+
+                            margin-top: 19.5px;
+                            height: 100%;
+                            padding-bottom: 20px;
+
+                            .right {
+                                .title-first {
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+        .gb-home-cyclopedia {
+            .content {
+                margin-top: 55px;
+    
+                .gb-home-crypto {
+
+                    .features {
+                        .title-second {
+                            font-size: 24px;
+                            line-height: 28.8px;
+                            font-weight: 900;
+                            color: #000;
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                            height: 52px;
+                        }
+    
+                        .detail {
+
+                            margin-top: 10px;
+
+                        }
+                    }
+    
+                    .latest {
+                        margin-top: 28px;
+    
+                        .content {
+                            height: 100%;
+                            padding-bottom: 20px;
+                        }
+                    }
+    
+                    .drop-down {
+
+                        margin-top: 10px;
+                    }
+                }
+    
+    
+            }
+        }
+        .gb-home-library {
+            .content {
+                .gb-home-library-features {
+                    .features {
+                        .title-second {
+                            font-size: 24px;
+                            line-height: 28.8px;
+                            font-weight: 800;
+                            color: #000;
+                            margin-top: 15px;
+                            margin-bottom: 0;
+                            height: 52px;
+                        }
+    
+                        .detail {
+                            display: flex;
+                            gap: 41.41px;
+                            font-size: 18px;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color: #181A1C;
+                            margin-top: 10px;
+                            margin-bottom: 0;
+                        }
+                    }
+    
+                    .latest {
+                        .content {
+                            height: 100%;
+                            padding-bottom: 20px;
+                        }
+                    }
+    
+                    .drop-down {
+
+                        margin-top: 10px;
+                    }
+                }
+    
+    
+            }
+        }
+    
+    
+    }
+
     @media screen and (max-width: 990px) {
         .gb-home-featured-posts {
             .right {
-                margin-top: 45px;
-    
-                img {
-                    width: 100%;
-                }
-    
                 .slick-dots {
                     position: absolute;
                     transform: translate(250px, 42px);
@@ -720,15 +857,9 @@
                         margin-top: 41px;
 
                         .content {
-                            &:last-child {
-                                border-bottom: none;
-                            }
-
                             margin-top: 19.5px;
-                            height: 150px;
-
-                            border-bottom: 1px solid #CDCDCD;
-
+                            height: 100%;
+                            padding-bottom: 20px;
                             .right {
                                 .title-second {
                                     margin-bottom: 0;
@@ -746,11 +877,8 @@
                 }
             }
         }
-
         .gb-home-cyclopedia {
             .content {
-                margin-top: 55px;
-
                 .gb-home-crypto {
                     border-right: none;
                     margin-bottom: 35px;
@@ -760,8 +888,8 @@
 
                         .content {
                             margin-top: 19.5px;
-
-                            height: 150px;
+                            height: 100%;
+                            padding-bottom: 20px;
 
                             .right {
                                 .title-second {
@@ -779,14 +907,15 @@
                     }
 
                 }
+                .drop-down {
+                  padding-bottom: 20px;
+                }
             }
         }
 
         .gb-home-library {
-
             .content {
                 margin-top: 56px;
-
                 .gb-home-library-features {
                     .latest {
                         margin-top: 28px;
@@ -798,7 +927,8 @@
 
                             margin-top: 19.5px;
                             margin-bottom: 25px;
-                            height: 150px;
+                            height: 100%;
+                            padding-bottom: 20px;
 
                             border-bottom: 1px solid #CDCDCD;
 
@@ -836,32 +966,6 @@
                         }
                     }
                 }
-
-
-            }
-        }
-
-        .gb-home-why-gb {
-            margin-top: 99px;
-            height: 621px;
-            background-color: $gb-accent-color-dark-green;
-            color: $gb-background-color;
-
-            .text-top {
-                padding-top: 89px;
-                font-size: 20px;
-                line-height: 26px;
-                font-weight: 800;
-
-            }
-
-            .text-bottom {
-                padding-top: 56px;
-                font-size: 44px;
-                line-height: 52.8px;
-                font-weight: 800;
-
-
             }
         }
     }
@@ -1011,7 +1115,7 @@
                         font-size: 0;
                         outline: none;
                         width: 6px;
-                        height: 9px;
+                        
                         background-color: #D9D9D9;
                         border-radius: 100rem;
                         border: none;
@@ -1021,7 +1125,7 @@
                         background-color: #D25F5A;
                         border: none;
                         width: 55px;
-                    height: 9px;
+                    
                     border-radius: 50px;
                     }
                 }
@@ -1153,7 +1257,8 @@
                             }
 
                             margin-top: 19.5px;
-                            height: 130px;
+                            height: 100%;
+                            padding-bottom: 10px;
                             
 
                             border-bottom: 1px solid #CDCDCD;
@@ -1222,55 +1327,14 @@
                     border-right: none;
                     margin-bottom: 35px;
 
-                    .title-text {
-                        font-size: 14px;
-                        line-height: 20px;
-                        font-weight: 800;
-                        color: #6979F8;
-                    }
-
-                    .features {
-                        img {
-                            width: 100%;
-                        }
-
-                        .title-first {
-                            font-size: 16px;
-                            line-height: 18px;
-                            font-weight: 900;
-                            color: #595E65;
-                            margin-bottom: 0;
-                            margin-top: 6px;
-                        }
-
-                        .title-second {
-                            font-size: 24px;
-                            line-height: 28.8px;
-                            font-weight: 900;
-                            color: #000;
-                            margin-top: 5px;
-                            margin-bottom: 0;
-                        }
-
-                        .detail {
-                            display: flex;
-                            gap: 41.41px;
-                            font-size: 18px;
-                            line-height: 27px;
-                            font-weight: 400;
-                            color: #181A1C;
-                            margin-top: 5px;
-                            margin-bottom: 0;
-                        }
-                    }
-
                     .latest {
                         margin-top: 28px;
 
                         .content {
                             margin-top: 19.5px;
 
-                            height: 130px;
+                            height: 100%;
+                            padding-bottom: 10px;
 
                             .right {
                                 .title-first {
@@ -1365,7 +1429,8 @@
 
                             margin-top: 19.5px;
                             margin-bottom: 25px;
-                            height: 130px;
+                            height: 100%;
+                            padding-bottom: 10px;
 
                             border-bottom: 1px solid #CDCDCD;
 
@@ -1557,19 +1622,13 @@
                 margin-top: 45px;
 
                 .slick-dots {
-                    position: absolute;
+
                     transform: translate(120px, 30px);
-                    display: flex !important;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0 18px;
-                    list-style: none;
-    
+
                     button {
                         font-size: 0;
                         outline: none;
-                        width: 5px;
-                        height: 8px;
+                        width: 2px;
                         background-color: #D9D9D9;
                         border-radius: 50%;
                         border: none;
@@ -1578,8 +1637,7 @@
                     .slick-active button {
                         background-color: #D25F5A;
                         border: none;
-                        width: 55px;
-                    height: 8px;
+                        width: 45px;
                     border-radius: 50px;
                     }
                 }
@@ -2075,17 +2133,9 @@
             }
             .right {
                 margin-top: 45px;
-               
                 .slick-dots {
 
-                    position: absolute;
                     transform: translate(60px, 20px);
-                    display: flex !important;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0 18px;
-                    list-style: none;
-                    
                     button {
                         font-size: 0;
                         outline: none;
