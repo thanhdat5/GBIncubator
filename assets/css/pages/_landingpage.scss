@@ -155,13 +155,10 @@
                 .slick-active button {
                     background-color: #D25F5A;
                     border: none;
+                    width: 55px;
+                    height: 12px;
+                    border-radius: 50px;
                 }
-            }
-
-            #slick-slide-control00 {
-                width: 55px;
-                height: 12px;
-                border-radius: 50px;
             }
 
         }
@@ -705,13 +702,10 @@
                     .slick-active button {
                         background-color: #D25F5A;
                         border: none;
-                    }
-                }
-    
-                #slick-slide-control00 {
-                    width: 55px;
+                        width: 55px;
                     height: 12px;
                     border-radius: 50px;
+                    }
                 }
     
             }
@@ -1026,13 +1020,10 @@
                     .slick-active button {
                         background-color: #D25F5A;
                         border: none;
-                    }
-                }
-    
-                #slick-slide-control00 {
-                    width: 55px;
+                        width: 55px;
                     height: 9px;
                     border-radius: 50px;
+                    }
                 }
     
             }
@@ -1587,13 +1578,10 @@
                     .slick-active button {
                         background-color: #D25F5A;
                         border: none;
-                    }
-                }
-    
-                #slick-slide-control00 {
-                    width: 55px;
+                        width: 55px;
                     height: 8px;
                     border-radius: 50px;
+                    }
                 }
     
             }
@@ -2038,13 +2026,60 @@
                     margin: 0
                 }
             }
+            .left {
+                margin-top: 45px;
+
+                .title-first {
+                    font-size: 12px;
+                    font-weight: 800;
+                    line-height: 16px;
+                    margin-left: 2px;
+                    color: #153C3A;
+
+                }
+
+                .title-second {
+                    font-size: 30px;
+                    font-weight: 800;
+                    line-height: 43.2px;
+                }
+
+                .detail {
+                    display: flex;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    gap: 49px;
+                    color: #595E65;
+                }
+
+                .description {
+                    font-weight: 200;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #595E65;
+                }
+
+                .see-more {
+                    margin-top: 38px;
+                    color: #D25F5A;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 18px;
+
+                    img {
+                        margin-left: 2.5px;
+                    }
+                }
+            }
             .right {
                 margin-top: 45px;
                
                 .slick-dots {
 
                     position: absolute;
-                    transform: translate(70px, 20px);
+                    transform: translate(60px, 20px);
                     display: flex !important;
                     align-items: center;
                     justify-content: center;
@@ -2065,13 +2100,10 @@
                     .slick-active button {
                         background-color: #D25F5A;
                         border: none;
+                        width: 35px;
+                        height: 4px;
+                        border-radius: 50px;
                     }
-                }
-    
-                #slick-slide-control00 {
-                    width: 35px;
-                    height: 4px;
-                    border-radius: 50px;
                 }
     
             }
